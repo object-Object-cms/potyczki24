@@ -26,6 +26,7 @@ Na klastrze "potyczki" utwórz projekt "web-server" a w nim namespace "ngnx". W 
 
 ### Zadanie 3
 Dodaj nowe repozytorium do katalogu aplikacji Ranchera. URL repo: https://rancher.github.io/rodeo **5pkt**
+Zainstaluj aplikację Tetris z nowo dodanego repo. **5 pkt**
 
 ### Zadanie 4
 Z katalogu aplikacji zainstaluj NeuVector w najnowszej stabilnej wersji. **10pkt**
@@ -38,7 +39,7 @@ Po dyskusjach z działem biznesowym doszliśmy do wniosku, że część usług m
 
 **30 pkt** za odpowiedź teoretyczną wraz z odpowiednim przykładowym kodem yaml
 
-**+30pkt** za odpowiednie zmodyfikowanie i zdeployowanie "nie-usuwaj.yaml" demonstrując działanie teoretycznego rozwiązania na klastrze "potyczki"; wymaga wykonania Zadania 2.
+**+30pkt** za odpowiednie zmodyfikowanie i zdeployowanie "nie-usuwaj.yaml" demonstrując działanie teoretycznego rozwiązania na klastrze "potyczki"; +**5 pkt** za użycie provisionera storage z Zadania 2.
 
 ### Zadanie 7
 Twój niezbyt rozgarnięty kolega z pracy, Adrian, prosi cię o poradę: w klastrze mam pewien resource, ale nie wiem jak znaleźć yaml tego zasobu? Jak go podejrzeć?
@@ -75,5 +76,9 @@ Nasz workload "ngnx" (Zadanie 1) jest prawdopodobnie atakowany z internetu! Uży
 ### Zadanie 14
 Adrian próbuje zdeployować nowy workload i chyba tym razem rzeczywiście coś zepsuł bo za nic nie chce się to uruchomić. Napraw i uruchom adrian.yaml w nowym namespace o nazwie "adrian". **40 pkt**
 
+### Zadanie 15
+Przy pomocy NeuVector utwórz regułę blokującą połączenia wychodzące z aplikacji Tetris (Zadanie 3) na zewnątrz klastra. (**7 pkt**) Wyeksportuj regułę jako CRD w trybie Protect i załącz do dokumentacji (**5 pkt**). Potwierdź działanie reguły logując się do poda Tetris i próbując nawiązać połączenie np. curl suse.com (**7 pkt**)
 
+### Zadanie 16
+Jedna z naszych Service nie może się połączyć ze wskazanym Deployment'em. Uruchom serwis.yaml w namespace "serwis" i napraw przyczynę problemu. **35 pkt**
 

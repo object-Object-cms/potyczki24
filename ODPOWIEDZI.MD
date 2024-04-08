@@ -160,6 +160,14 @@ Deployment zarządza cyklem życia aplikacji w Kubernetes, w tym wdrażaniem, ak
 
 W Rancher UI, wchodzę w "Cluster Management" i przy potyczki klikam w "Edit Config". Zmieniam Kubernetes version na najnowszą i klikam "Save".
 
+# Zadanie 11
+Stworzenie dwóch użtkowników loalnych
+- muhammed.yassuff (Manager IT)
+- muhhamad.yussuff (Praktykant)
+
+Manager dostał role 'looking' na klustrze potyczki, nie może czytać sekretów
+Praktykant dostał role 'Cluster Owner' na projekcie web-server
+
 # Zadanie 12
 
 Adrian jest winny - przydzielił on zbyt mało pamięci RAM dla MySQLa. Pobrałem YAMLa tego poda, zedytowałem resources i zdeployowałem go jeszcze raz.

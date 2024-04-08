@@ -189,7 +189,7 @@ $ rancher kubectl create namespace baza
 
 I zdeployowałem plik:
 ```
-$ rancher kubectl apply -f baza.yaml.txt --namespace baza
+$ rancher kubectl apply -f baza.yaml --namespace baza
 ```
 
 # Zadanie 18

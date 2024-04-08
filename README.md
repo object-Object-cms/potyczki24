@@ -26,6 +26,7 @@ Na klastrze "potyczki" utwórz projekt "web-server" a w nim namespace "nginx". W
 
 ### Zadanie 3
 Dodaj nowe repozytorium do katalogu aplikacji Ranchera. URL repo: https://rancher.github.io/rodeo **5pkt**
+
 Zainstaluj aplikację Tetris z nowo dodanego repo. **5 pkt**
 
 ### Zadanie 4

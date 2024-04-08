@@ -84,7 +84,9 @@ Projektem o największej liczbie podatności to nvbeta/node:latest - jest w nim 
 
 # Zadanie 6
 PVC nie usuwa się podczas skalowania
+
 Aby użyć provisioning z longhorna dodaje `storageClassName: longhorn`
+
 Aplikuje na klaster
 ```
 $ rancher kubectl apply -f nie-usuwaj.yaml

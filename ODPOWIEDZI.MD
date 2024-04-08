@@ -178,6 +178,20 @@ Stworzyłem namespace adrian: `rancher kubectl create namespace adrian`
 
 Zdeployowałem plik do namespace'a: `rancher kubectl apply -f adrian-nginx.yaml --namespace adrian`
 
+
+# Zadanie 17
+
+Plik `baza.yaml` miał błąd polegający na błędnej definicji zmiennej środowiskowej MYSQL_ROOT_PASSWORD (było MYSQL_ROT_PASSWORD)
+Stworzyłem namespace:
+```
+$ rancher kubectl create namespace baza
+```
+
+I zdeployowałem plik:
+```
+$ rancher kubectl apply -f baza.yaml.txt --namespace baza
+```
+
 # Zadanie 18
 
 hello-world nie działał, ponieważ Adrian wybrał architekturę arm64, a komputer na którym stoi cluster to maszyna x86_64. Po usunięciu taga architektury, hello-world działa, ale oczywiście się wyłącza (hello-world musi się wyłączyć).

@@ -76,6 +76,12 @@ Zalogowałem się za pomocą defaultowych danych - admin, admin.
 
 Włączyłem Auto-Scan - przełącznik na górze ekranu.
 
+# Zadanie 5
+
+W zakładce "Assets" > "Registries" dodałem rejestr "https://registry.hub.docker.com" z filtrem "nvbeta/*" i rozpocząłem scan.
+
+Projektem o największej liczbie podatności to nvbeta/node:latest - jest w nim 1294 danger i 824 warning.
+
 # Zadanie 7
 
 Aby odczytać YAMLa jakiegoś resource'a można:
@@ -89,6 +95,10 @@ Aby odczytać YAMLa jakiegoś resource'a można:
 
     * Znaleść resource przez CLI - na przykład `rancher kubectl get pods`
     * Odczytać YAMLa tego resource'a - `rancher kubectl get pod -o yaml <nazwa poda>`
+
+# Zadanie 9
+
+Deployment zarządza cyklem życia aplikacji w Kubernetes, w tym wdrażaniem, aktualizacjami i rollbackami. Deployment wykorzystuje ReplicaSety. ReplicaSety pozwalają kontrolować ilość replik (instancji) w klastrze.
 
 # Zadanie 14
 

@@ -110,9 +110,10 @@ W pliku `adrian-nginx.yaml` readinessProbe ustawione jest na port 8080, a nginx 
 
 Stworzyłem namespace adrian: `rancher kubectl create namespace adrian`
 
+Zdeployowałem plik do namespace'a: `rancher kubectl apply -f adrian-nginx.yaml --namespace adrian`
+
 # Zadanie 18
 
 hello-world nie działał, ponieważ Adrian wybrał architekturę arm64, a komputer na którym stoi cluster to maszyna x86_64. Po usunięciu taga architektury, hello-world działa, ale oczywiście się wyłącza (hello-world musi się wyłączyć).
-Zdeployowałem plik do namespace'a: `rancher kubectl apply -f adrian-nginx.yaml --namespace adrian`
 
 

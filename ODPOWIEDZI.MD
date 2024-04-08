@@ -160,6 +160,12 @@ Deployment zarządza cyklem życia aplikacji w Kubernetes, w tym wdrażaniem, ak
 
 W Rancher UI, wchodzę w "Cluster Management" i przy potyczki klikam w "Edit Config". Zmieniam Kubernetes version na najnowszą i klikam "Save".
 
+# Zadanie 12
+
+Adrian jest winny - przydzielił on zbyt mało pamięci RAM dla MySQLa. Pobrałem YAMLa tego poda, zedytowałem resources i zdeployowałem go jeszcze raz.
+
+Yaml dołączony do repo.
+
 # Zadanie 13
 
 Używam zakładki "Network Activity"

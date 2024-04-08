@@ -148,6 +148,10 @@ Gateway jest nową alternatywą dla ingressa. Pozwala na upublicznienie serwisó
 
 Deployment zarządza cyklem życia aplikacji w Kubernetes, w tym wdrażaniem, aktualizacjami i rollbackami. Deployment wykorzystuje ReplicaSety. ReplicaSety pozwalają kontrolować ilość replik (instancji) w klastrze.
 
+# Zadanie 10
+
+W Rancher UI, wchodzę w "Cluster Management" i przy potyczki klikam w "Edit Config". Zmieniam Kubernetes version na najnowszą i klikam "Save".
+
 # Zadanie 13
 
 Używam zakładki "Network Activity"

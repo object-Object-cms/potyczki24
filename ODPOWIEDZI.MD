@@ -67,11 +67,20 @@ Aby odczytać YAMLa jakiegoś resource'a można:
 
 - Użyć Rancher UI:
 
-* Znaleść resource w UI - na przykład Pods -> tetris.
-* W rogu strony, kliknąć na menu "..." w pionie, poten "Edit YAML" - YAML zostanie ukazany
+    * Znaleść resource w UI - na przykład Pods -> tetris.
+    * W rogu strony, kliknąć na menu "..." w pionie, poten "Edit YAML" - YAML zostanie ukazany
 
 - Użyć kubectl przez Rancher CLI
 
-* Znaleść resource przez CLI - na przykład `rancher kubectl get pods`
-* Odczytać YAMLa tego resource'a - `rancher kubectl get pod -o yaml <nazwa poda>`
+    * Znaleść resource przez CLI - na przykład `rancher kubectl get pods`
+    * Odczytać YAMLa tego resource'a - `rancher kubectl get pod -o yaml <nazwa poda>`
+
+# Zadanie 14
+
+Naprawiłem plik adrian-nginx.yaml w 83ad5ac
+
+Stworzyłem namespace adrian: `rancher kubectl create namespace adrian`
+
+Zdeployowałem plik do namespace'a: `rancher kubectl apply -f adrian-nginx.yaml --namespace adrian`
+
 

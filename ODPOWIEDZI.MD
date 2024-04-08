@@ -20,7 +20,9 @@ Dostępne pod: `http://nginx.193.187.69.136.sslip.io`
 
 # Zadanie 3
 
-W rancher web UI, otworzyłem cluste rpotyczki, sekcja Apps, Repositories, Create, wprowadziłem nazwę i URL
+W rancher web UI, otworzyłem cluste rpotyczki, sekcja Apps, Repositories, Create, wprowadziłem nazwę i URL.
+
 W zakładce Apps, charts wyszukałem "tetris" i zainstalowem aplikację. Jako hostname podałem `tetris.193.187.69.136.sslip.io`.
+
 Aplikacja działa
 

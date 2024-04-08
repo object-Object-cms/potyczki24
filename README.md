@@ -80,5 +80,7 @@ Adrian próbuje zdeployować nowy workload i chyba tym razem rzeczywiście coś 
 Przy pomocy NeuVector utwórz regułę blokującą połączenia wychodzące z aplikacji Tetris (Zadanie 3) na zewnątrz klastra. (**7 pkt**) Wyeksportuj regułę jako CRD w trybie Protect i załącz do dokumentacji (**5 pkt**). Potwierdź działanie reguły logując się do poda Tetris i próbując nawiązać połączenie np. curl suse.com (**7 pkt**)
 
 ### Zadanie 16
-Jedna z naszych Service nie może się połączyć ze wskazanym Deployment'em. Uruchom serwis.yaml w namespace "serwis" i napraw przyczynę problemu. **35 pkt**
+Jedna z naszych Service nie może się połączyć ze wskazanym Deployment'em. Uruchom serwis.yaml w nowym namespace "serwis" i napraw przyczynę problemu. **35 pkt**
 
+### Zadanie 17
+Kolejna instancja mysql sprawia problemy, Adrian od trzech dni przez nią nie śpi bo przecież wszystko sprawdził. Uruchom baza.yaml w nowym namespace "baza" i doprowadź do poprawnego załadowania się bazy danych. **25 pkt**

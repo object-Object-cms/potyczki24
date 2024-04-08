@@ -1,6 +1,4 @@
-# To do: Deployment mysql.yml
-# To do: Deployment hello.yml
-Witamy w finale!
+# Witamy w finale!
 Potyczki Młodych Adminów 2024
 
 ## Wstęp

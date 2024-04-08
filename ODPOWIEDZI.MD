@@ -92,9 +92,7 @@ Aby odczytać YAMLa jakiegoś resource'a można:
 
 # Zadanie 14
 
-W pliku `adrian-nginx.yaml` readinessProbe ustawione jest na port 8080, a nginx działa na porcie 80
-W dodatku livenessProbe requestuje path `/somepath`, który nie istnieje i powoduje błąd podczas proba
-Zmieniłem obie wartości na poprawne
+W pliku `adrian-nginx.yaml` readinessProbe ustawione jest na port 8080, a nginx działa na porcie 80, w dodatku livenessProbe requestuje path `/somepath`, który nie istnieje i powoduje błąd podczas proba, zmieniłem obie wartości na poprawne
 
 Stworzyłem namespace adrian: `rancher kubectl create namespace adrian`
 

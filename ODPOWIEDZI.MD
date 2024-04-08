@@ -18,6 +18,41 @@ $ kubectl apply -f zad1.yaml
 ```
 Dostępne pod: `http://nginx.193.187.69.136.sslip.io`
 
+# Zadanie 2
+1. Prerequisites:
+- zainstalowane containerd w wersji v1.7.11
+- zainstalowane kubernetes v1.26.13
+- bash, curl, findmnt, grep, awk i blkid są zainstalowane
+- brakuje open-iscsi
+- instalacja za pomocą zyppera
+  `sudo zypper install open-iscsi`
+- włączenie serwisu iscsi
+  `sudo systemctl enable --now iscsid`
+2. Instalacja, wybranie default storage class i ustawienie replik na 1
+3. Wszystkie pody są aktywne
+```
+NAME                                                READY   STATUS    RESTARTS        AGE
+csi-attacher-5859bc989f-4xjtb                       1/1     Running   0               7m5s       
+csi-attacher-5859bc989f-9pb4v                       1/1     Running   0               7m5s       
+csi-attacher-5859bc989f-gx9rb                       1/1     Running   0               7m5s       
+csi-provisioner-c7ffcc5cc-gktcf                     1/1     Running   0               7m4s       
+csi-provisioner-c7ffcc5cc-p8c5t                     1/1     Running   0               7m4s       
+csi-provisioner-c7ffcc5cc-xtgxm                     1/1     Running   0               7m5s       
+csi-resizer-777857494b-jdh5p                        1/1     Running   0               7m4s       
+csi-resizer-777857494b-jh9cj                        1/1     Running   0               7m4s       
+csi-resizer-777857494b-qmj52                        1/1     Running   0               7m4s       
+csi-snapshotter-64cdff5bb4-g6xqh                    1/1     Running   0               7m4s       
+csi-snapshotter-64cdff5bb4-hklvd                    1/1     Running   0               7m4s       
+csi-snapshotter-64cdff5bb4-ksjcg                    1/1     Running   0               7m4s       
+engine-image-ei-933d45a5-mbg28                      1/1     Running   0               7m28s      
+instance-manager-12662523553b77548349eb5a415428a4   1/1     Running   0               7m28s      
+longhorn-csi-plugin-m7n56                           3/3     Running   0               7m4s       
+longhorn-driver-deployer-c77dd9cd6-klf45            1/1     Running   0               8m22s      
+longhorn-manager-q76xp                              1/1     Running   1 (7m42s ago)   8m22s      
+longhorn-ui-77ddf5bdf-rfj9h                         1/1     Running   0               8m22s      
+longhorn-ui-77ddf5bdf-xfxd2                         1/1     Running   0               8m22s      
+```
+
 # Zadanie 3
 
 W rancher web UI, otworzyłem cluster potyczki, sekcja Apps, Repositories, Create, wprowadziłem nazwę i URL.

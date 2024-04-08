@@ -61,6 +61,21 @@ W zakładce Apps, charts wyszukałem "tetris" i zainstalowem aplikację. Jako ho
 
 Aplikacja działa
 
+# Zadanie 4
+
+W zakładce Apps, charts wyszukałem NeuVector i go zainstalowałem. Jest dostępny pod adresem https://193.187.69.136.sslip.io:31824/
+Aby ingress zadziałał, dodaję annotacje
+
+```
+$ rancher kubectl annotate --namespace cattle-neuvector-system ingress neuvector-webui-ingress nginx.ingress.kubernetes.io/backend-protocol="HTTPS"
+```
+
+Teraz jest także dostępny pod https://neuvector.193.187.69.136.sslip.io/
+
+Zalogowałem się za pomocą defaultowych danych - admin, admin.
+
+Włączyłem Auto-Scan - przełącznik na górze ekranu.
+
 # Zadanie 7
 
 Aby odczytać YAMLa jakiegoś resource'a można:

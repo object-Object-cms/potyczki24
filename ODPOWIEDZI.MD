@@ -104,6 +104,16 @@ Gateway jest nową alternatywą dla ingressa. Pozwala na upublicznienie serwisó
 
 Deployment zarządza cyklem życia aplikacji w Kubernetes, w tym wdrażaniem, aktualizacjami i rollbackami. Deployment wykorzystuje ReplicaSety. ReplicaSety pozwalają kontrolować ilość replik (instancji) w klastrze.
 
+# Zadanie 13
+
+Używam zakładki "Network Activity"
+
+![Połączenia](https://github.com/object-Object-cms/potyczki24/blob/main/Graph_8.04.2024.png?raw=true)
+
+Zapisałem przykładowe pakiety, które wysyłane były do nginx'a, oraz dołączyłem je do tego repozytorium
+
+Analiza pakietów polega na przeglądaniu pakiet po pakiecie jakie dane zostały wysłane do i z danego hosta, w celu analizy transferów. Przykładowym narzędziem do ich analizy jest Wireshark, który także pozwala na inch przechwytywanie.
+
 # Zadanie 14
 
 W pliku `adrian-nginx.yaml` readinessProbe ustawione jest na port 8080, a nginx działa na porcie 80, w dodatku livenessProbe requestuje path `/somepath`, który nie istnieje i powoduje błąd podczas proba, zmieniłem obie wartości na poprawne

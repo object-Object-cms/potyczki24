@@ -192,6 +192,12 @@ Stworzyłem namespace adrian: `rancher kubectl create namespace adrian`
 
 Zdeployowałem plik do namespace'a: `rancher kubectl apply -f adrian-nginx.yaml --namespace adrian`
 
+# Zadanie 15
+
+Dodałem regułę w sekcji policies > Network Rules.
+
+W settings > configuration przeszedłem na tryb protect
+
 # Zadanie 16
 
 Plik `serwis.yaml` miał źle ustawione labele dla podów.

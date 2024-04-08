@@ -178,6 +178,29 @@ Stworzyłem namespace adrian: `rancher kubectl create namespace adrian`
 
 Zdeployowałem plik do namespace'a: `rancher kubectl apply -f adrian-nginx.yaml --namespace adrian`
 
+# Zadanie 16
+
+Plik `serwis.yaml` miał źle ustawione labele dla podów.
+Po dodaniu `app.kubernetes.io/name: nginx` do deployment.spec.template.metadata.labels, serwis jest dobrze dopięty do Poda:
+```
+Name:              nginx-svc
+Namespace:         serwis
+Labels:            <none>
+Annotations:       <none>
+Selector:          app.kubernetes.io/name=nginx
+Type:              ClusterIP
+IP Family Policy:  SingleStack
+IP Families:       IPv4
+IP:                10.43.202.111
+IPs:               10.43.202.111
+Port:              <unset>  80/TCP
+TargetPort:        80/TCP
+Endpoints:         10.42.190.35:80
+Session Affinity:  None
+Events:            <none>
+```
+(Endpoint jest ustalony)
+Plik `serwis.yaml` został zaktualizowany w repozytorium.
 
 # Zadanie 17
 

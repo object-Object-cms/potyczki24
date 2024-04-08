@@ -1,8 +1,10 @@
-# Witamy w finale!
+# To do: Deployment mysql.yml
+# To do: Deployment hello.yml
+Witamy w finale!
 Potyczki Młodych Adminów 2024
 
 ## Wstęp
-Tegoroczne zadania są pomyślane jako dzień z pracy administratora w korporacji. Jest trochę codziennych, podstawowych czynności, trochę pomagamy mniej doświadczonym kolegom, jest znaczący nacisk na elementy związane z bezpieczeństwem, są też wyzwania i awarie, z którymi należy jak najszybciej się uporać bo kosztują naszą organizację pieniądze. Jak w prawdziwym życiu, zadań jest więcej niż czasu i warto odpowiednio priorytetyzować.
+Tegoroczne zadania są pomyślane jako dzień z pracy administratora w korporacji. Jest trochę codziennych, podstawowych czynności, trochę pomagamy mniej doświadczonym kolegom, jest znaczący nacisk na elementy związane z bezpieczeństwem, są też wyzwania i awarie, z którymi należy jak najszybciej się uporać bo kosztują naszą organizację pieniądze. Czasem jedna litera jest różnicą między pracą dobrze zrobioną, a niewytłumaczalnym (albo niewybaczalnym) błędem. Jak w prawdziwym życiu, zadań jest więcej niż czasu i warto odpowiednio priorytetyzować.
 
 Powodzenia!
 
@@ -40,9 +42,9 @@ Nasi deweloperzy chcą korzystać z publicznie dostępnych obrazów, ale mogą o
 ### Zadanie 6
 Po dyskusjach z działem biznesowym doszliśmy do wniosku, że część usług możemy wygasić na noc, żeby zminimalizować koszty. Niestety przeskalowanie do 0 (czyli de facto usunięcie usunięcie poda) powoduje automatyczne usunięcie PersistentVolueClaim, co automatycznie usuwa też przypisany PersistentVolume. A chcemy zachować PersistentVolume i automatycznie podłączyć się do niego z powrotem przy uruchomieniu usługi rano. Jeden z tych deploymentów możliwych do wygaszania jest opisany w "nie-usuwaj.yaml". Zaproponuj rozwiązanie, które zapewni, że po przeskalowaniu do 0 i ponownym wznowieniu opisany deployment "znajdzie" PersistentVolume używany przez poprzednie repliki i się do niego podłączy.
 
-**30 pkt** za odpowiedź teoretyczną wraz z odpowiednim przykładowym kodem yaml
+**30 pkt** za odpowiedź teoretyczną wraz z odpowiednim przykładowym kodem yaml.
 
-**+30pkt** za odpowiednie zmodyfikowanie i zdeployowanie "nie-usuwaj.yaml" demonstrując działanie teoretycznego rozwiązania na klastrze "potyczki"; +**5 pkt** za użycie provisionera storage z Zadania 2.
+**30pkt** za odpowiednie zmodyfikowanie i zdeployowanie "nie-usuwaj.yaml" demonstrując działanie teoretycznego rozwiązania na klastrze "potyczki"; +**5 pkt** za użycie provisionera storage z Zadania 2.
 
 ### Zadanie 7
 Twój niezbyt rozgarnięty kolega z pracy, Adrian, prosi cię o poradę: w klastrze mam pewien resource, ale nie wiem jak znaleźć yaml tego zasobu? Jak go podejrzeć?
@@ -90,3 +92,5 @@ Jedna z naszych Service nie może się połączyć ze wskazanym Deployment'em. U
 ### Zadanie 17
 Kolejna instancja mysql sprawia problemy, Adrian od trzech dni przez nią nie śpi bo trzyma klaster i przecież wszystko sprawdził. Uruchom baza.yaml w nowym namespace "baza" i doprowadź do poprawnego załadowania się bazy danych. **25 pkt**
 
+### Zadanie 18
+Adrian chciał uruchomić aplikację "hello-world", ale nawet to mu nie działa. Znajdź przyczynę problemu i uruchom hello-world. **20 pkt**

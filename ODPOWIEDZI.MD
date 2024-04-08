@@ -192,6 +192,12 @@ I zdeployowałem plik:
 $ rancher kubectl apply -f baza.yaml --namespace baza
 ```
 
+Zweryfikowałem, że baza działa - po podaniu hasła miałem dostęp do bazy:
+
+```
+$ rancher kubectl exec --stdin --tty --namespace baza mysql-7fcbf5dfd6-lpvwj -- mysql -p
+```
+
 # Zadanie 18
 
 hello-world nie działał, ponieważ Adrian wybrał architekturę arm64, a komputer na którym stoi cluster to maszyna x86_64. Po usunięciu taga architektury, hello-world działa, ale oczywiście się wyłącza (hello-world musi się wyłączyć).

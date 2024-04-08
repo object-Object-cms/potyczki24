@@ -82,6 +82,48 @@ W zakładce "Assets" > "Registries" dodałem rejestr "https://registry.hub.docke
 
 Projektem o największej liczbie podatności to nvbeta/node:latest - jest w nim 1294 danger i 824 warning.
 
+# Zadanie 6
+PVC nie usuwa się podczas skalowania
+Aby użyć provisioning z longhorna dodaje `storageClassName: longhorn`
+Aplikuje na klaster
+```
+$ rancher kubectl apply -f nie-usuwaj.yaml
+```
+Uruchamiam `sh` w podzie i zapisuje testowe pliki
+```
+$ rancher kubectl exec --stdin --tty ubuntu-5ffb86755d-ht4zv -- /bin/sh
+/shared_files # ls
+lost+found
+/shared_files # echo test > plik
+/shared_files # cat plik
+test
+/shared_files #
+```
+Skaluje deployment do 0
+```
+$ rancher kubectl scale deployment ubuntu --replicas 0
+...
+NAME     READY   UP-TO-DATE   AVAILABLE   AGE
+ubuntu   0/0     0            0           4m12s
+```
+Skaluje z powrotem do 1
+```
+$ rancher kubectl scale deployment ubuntu --replicas 1
+...
+NAME     READY   UP-TO-DATE   AVAILABLE   AGE
+ubuntu   1/1     1            1           5m11s
+```
+Uruchamiam `sh` w nowym podzie i weryfikuje, że pliki nadal się tam znajdują
+```
+$ rancher kubectl exec --stdin --tty ubuntu-5ffb86755d-rxbfr -- /bin/sh
+/ # cd shared_files/
+/shared_files # ls
+lost+found  plik
+/shared_files # cat plik
+test
+/shared_files #
+```
+
 # Zadanie 7
 
 Aby odczytać YAMLa jakiegoś resource'a można:

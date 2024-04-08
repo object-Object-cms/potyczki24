@@ -140,6 +140,14 @@ Aby odczytać YAMLa jakiegoś resource'a można:
     * Znaleść resource przez CLI - na przykład `rancher kubectl get pods`
     * Odczytać YAMLa tego resource'a - `rancher kubectl get pod -o yaml <nazwa poda>`
 
+# Zadanie
+
+Uruchamianie MySQLa na ustawieniach standardowych będzie definitywnie prostrze i szybsze od konfigurowania go ręcznie, jednak może być związane z pogorszonym bezpieczeństwem bazy danch.
+
+Baza uruchomiona w ten właśnie sposób nie będzie także wyoptymalizowana do konkretnego use-case'u tej aplikacji.
+
+Zaleca się konfigurację ręczną, po poprzednim przeczytaniu dokumentacji. 
+
 # Zadanie 8
 
 Gateway jest nową alternatywą dla ingressa. Pozwala na upublicznienie serwisów działających w klastrze na publiczne adresy. Przesyła dane pomiędzy siecią zewnętrzną a serwisami w klastrze.
